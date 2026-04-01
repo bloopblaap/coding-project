@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="heart.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Mar<span>sha</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html" class="nav-btn">Hire Me</a></li>
+        </ul>
+        <!-- Chatgpt, could you help me make this navbar responsive, please?; row 21-25 -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <section class="contact">
+        <div class="contact-grid">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127501.60201219958!2d104.6618147479777!3d-2.9794464242210252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e6e50d3c73%3A0x4be6aaf76d5250b1!2sPalembang%20City%2C%20South%20Sumatra!5e0!3m2!1sen!2sid!4v1774001350665!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-con">
+                <h2 class="contact-title">Interested to work together?</h2>
+                <p class="contact-subtitle">Let's talk about your project and see how we can bring your ideas to life. Fill out the form below and I'll get back to you within 24 hours.</p>
+            <!-- Hey, how do you rewrite the following code so that it uses Form Submit? "code..."; row 36-60 -->
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/marshaaqila0cxd0@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-grp">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-grp">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-grp">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-grp">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <div class="yomom">
+                    <div class="yomom1">
+                        <div class="yomom2">
+                            <div class="idfkbrowhyuaskingme">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="idfkbrowhyuaskingme2">
+                                <p style="font-size: 13.6px; color: #6c757d;">Email</p>
+                                <p style="font-weight: 500;">marshaaqila0cxd0@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="yomom2">
+                            <div class="idfkbrowhyuaskingme">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="idfkbrowhyuaskingme2">
+                                <p style="font-size: 13.6px; color: #6c757d;">Phone</p>
+                                <p style="font-weight: 500;">+62 816-412-800</p>
+                            </div>
+                        </div>
+                        <div class="yomom2">
+                            <div class="idfkbrowhyuaskingme">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="idfkbrowhyuaskingme2">
+                                <p style="font-size: 13.6px; color: #6c757d;">Location</p>
+                                <p style="font-weight: 500;">Palembang, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mar<span>sha</span></div>
+            <div class="links">
+                <a href="https://line.me/ti/p/Xp7Jpdz_Qt" target="_blank"><img src="line-icon-free-png.webp" alt="line"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/bloopblaap" target="_blank" style="background-color: white;"><img src="github_PNG40.png" alt="github" style="margin-left: 1.5px; margin-top: 3px;"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Marsha. All rights reserved.<i class="fas fa-heart" style="color: #60828f;"></i></p>
+        </div>
+    </footer>
+
+    <script>
+    // Chatgpt, could you help me make this navbar responsive, please?; row 106-121
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
